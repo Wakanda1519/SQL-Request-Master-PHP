@@ -10,7 +10,7 @@ $sql = new SQLRequestMaster("localhost", "root", "", "database");
 
 ### Methods ###
 
-`1.` Creating a record in the database
+`1` Creating a record in the database
 ```php
 $data = array(
     "id" => 2,
@@ -22,7 +22,7 @@ $sql->Create("test", $data);
 $sql->Close();
 ```
 
-`2.` Reading records in the database
+`2` Reading records in the database
 ```php
 $data = $sql->Read("test");
 
@@ -33,7 +33,7 @@ $data = $sql->Read("test");
 $sql->Close();
 ```
 
-`3.` Updateing records in the database
+`3` Updateing records in the database
 ```php
 $data = array('status' => false);
 $condition = "id = 2";
@@ -42,7 +42,7 @@ $sql->Update("test", $data, $condition);
 $sql->Close();
 ```
 
-`4.` Deleting records in the database
+`4` Deleting records in the database
 ```php
 $condition = "id = 2";
 $sql->Delete("test", $condition);
